@@ -39,5 +39,15 @@ Guess characters from the hit manga *Sakamoto Days*!
 1. Clone or download this repository to your computer.
 2. Double-click the `index.html` file to open it in your web browser.
 
+## ⚖️ License & Usage
+
+**Meanidle** is open-source software licensed under the **GNU General Public License v3.0 (GPLv3)**.
+
+You are free to use, modify, and distribute this project, provided that you adhere to the following strict conditions:
+1. **Open Source Requirement (Copyleft):** Any modifications, derivative works, or projects built upon this code must also be open-sourced and distributed under the same GPLv3 license.
+2. **Mandatory Attribution:** You must give clear credit to the original creator. Do not remove any original copyright notices, and please include a link back to this original GitHub repository in your project's README or credits section.
+
+For full legal details, please see the [LICENSE](LICENSE) file included in this repository.
+
 ## 💬 Support & Feedback
 If you want to support the project, leave a comment, or provide feedback, please send it to: **karmaez3388@gmail.com**
