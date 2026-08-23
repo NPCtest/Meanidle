@@ -122,8 +122,10 @@ export class SakamotodleGame {
             { text: guess.name, class: '' },
             guess.compareString('gender', this.targetCharacter),
             guess.compareNumber('age', this.targetCharacter),
+            guess.compareString('eye', this.targetCharacter),
             guess.compareString('hair', this.targetCharacter),
             guess.compareNumber('height', this.targetCharacter),
+            guess.compareNumber('weight', this.targetCharacter),
             guess.compareString('occupation', this.targetCharacter),
             guess.compareString('affiliation', this.targetCharacter),
             guess.compareArc('firstArc', this.targetCharacter)

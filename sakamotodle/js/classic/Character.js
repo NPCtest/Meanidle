@@ -2,9 +2,11 @@ export class Character {
     constructor(data) {
         this.name = data.name;
         this.gender = data.gender;
+        this.eye = data.eye;
         this.age = data.age;
         this.hair = data.hair;
         this.height = data.height;
+        this.weight = data.weight;
         this.occupation = data.occupation;
         this.affiliation = data.affiliation;
         this.firstArc = data.firstArc;
