@@ -5,6 +5,7 @@ export class SakamotodleGame {
     constructor() {
         this.characters = characterData.map(data => new Character(data));
         this.targetCharacter = null;
+        this.availableTargets = [...this.characters];
         this.guessCount = 0;
         this.guessedCharacters = [];
         this.answerRevealed = false;
@@ -57,8 +58,12 @@ export class SakamotodleGame {
     }
 
     startNewGame() {
-        const randomIndex = Math.floor(Math.random() * this.characters.length);
-        this.targetCharacter = this.characters[randomIndex];
+        if (this.availableTargets.length === 0) {
+            this.availableTargets = [...this.characters];
+            console.log("All characters have been guessed! Resetting the pool.");
+        }
+        const randomIndex = Math.floor(Math.random() * this.availableTargets.length);
+        this.targetCharacter = this.availableTargets.splice(randomIndex, 1)[0];
 
         this.guessCount = 0;
         this.guessedCharacters = [];

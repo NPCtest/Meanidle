@@ -6,6 +6,7 @@ export class QuoteGame {
         this.characters = characterData;
         this.quotes = quotesData;
         this.targetQuote = null;
+        this.availableQuotes = [...this.quotes];
         this.targetCharacterObj = null;
         this.guessCount = 0;
         this.guessedCharacters = [];
@@ -68,8 +69,12 @@ export class QuoteGame {
     }
 
     startNewGame() {
-        const randomIndex = Math.floor(Math.random() * this.quotes.length);
-        this.targetQuote = this.quotes[randomIndex];
+        if (this.availableQuotes.length === 0) {
+            this.availableQuotes = [...this.quotes];
+            console.log("All quotes have been guessed! Resetting the pool.");
+        }
+        const randomIndex = Math.floor(Math.random() * this.availableQuotes.length);
+        this.targetQuote = this.availableQuotes.splice(randomIndex, 1)[0];
         this.targetCharacterObj = this.characters.find(c => c.name === this.targetQuote.character);
 
         this.quoteDisplay.innerText = this.targetQuote.quote;
