@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KillerPietroDle - Guess Killer Peter characters by their stats!">
+    <title>KillerPietroDle - Killer Peter Character Guessing Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav"><a href="../index.html">← Back to Meanidle</a></div>
+
+    <div class="main-logo" style="text-align: center; margin: 10px 0;">
+        <h1>🗡️ KillerPietroDle</h1>
+    </div>
+
+    <div class="game-container">
+        <div class="input-area">
+            <input type="text" id="guessInput" placeholder="Type a character name...">
+            <div id="autocompleteList" class="autocomplete-list"></div>
+        </div>
+
+        <button id="guessBtn">Guess!</button>
+        <button id="answerBtn">Answer 🔍</button>
+        <button id="restartBtn">New Round 🔄</button>
+    </div>
+
+    <div id="answerBox" class="answer-box" style="display:none"></div>
+    <div class="stats">Guesses: <span id="guessCount">0</span></div>
+    
+    <div class="result-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Hair</th>
+                    <th>Height</th>
+                    <th>Occupation</th>
+                    <th>Affiliation</th>
+                    <th>First Arc Appear</th>
+                </tr>
+            </thead>
+            <tbody id="resultBody"></tbody>
+        </table>
+    </div>
+
+    <footer style="margin-top: 40px; text-align: center; color: #888; font-size: 0.9rem; padding: 20px;">
+        If you want to support, comment, or leave feedback, send it to <a href="mailto:karmaez3388@gmail.com" style="color: #ff6f00; text-decoration: none; font-weight: bold;">karmaez3388@gmail.com</a><br><br>
+        &copy; 2026 Meanidle. Open-sourced under the <a href="https://github.com/NPCtest/Meanidle/blob/main/LICENSE" target="_blank" style="color: #888; text-decoration: underline;">GPLv3 License</a>.
+    </footer>
+
+    <script type="module" src="js/classic/main.js"></script>
+</body>
+</html>
