@@ -34,15 +34,16 @@ export class Character {
 
     compareArc(attribute, targetCharacter) {
         const arcOrder = [
-            "Sakamoto's Daily Life",
             "Amusement Park Arc",
-            "LAB Arc",
+            "Lab Arc",
             "Death Row Prisoners Arc",
             "JCC Transfer Exams Arc",
             "JCC Infiltration Arc",
             "Taro Sakamoto's Past Arc",
+            "Bangkok Arc",
             "Assassin Exhibition Arc",
-            "Prison Arc"
+            "JAA Jail Arc",
+            "New JAA Arc"
         ];
 
         if (this[attribute] === targetCharacter[attribute]) {
