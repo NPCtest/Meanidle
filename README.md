@@ -35,10 +35,6 @@ Guess characters from the hit manga *Sakamoto Days*!
 4. **Use Hints (Quotes Mode):** If you are stuck on a quote in Sakamotodle, click the **Hint 💡** button to reveal the specific story arc where the correct character made their debut.
 5. **Reveal Answer:** If you are completely stumped, hit the **Answer 🔍** button to reveal the target character and end the round.
 
-**Play Locally (Offline):**
-1. Clone or download this repository to your computer.
-2. Double-click the `index.html` file to open it in your web browser.
-
 ## ⚖️ License & Usage
 
 **Meanidle** is open-source software licensed under the **GNU General Public License v3.0 (GPLv3)**.
