@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakamotodle - Guess Sakamoto Days Characters</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav"><a href="../index.html">← Back to Meanidle</a></div>
+    
+    <style>
+        .mode-tabs { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; }
+        .mode-tab { padding: 10px 20px; border-radius: 8px; text-decoration: none; color: white; background-color: #333; font-weight: bold; transition: 0.2s; }
+        .mode-tab:hover { background-color: #555; }
+        .mode-tab.active { background-color: #f44336; }
+    </style>
+    
+    <div class="mode-tabs">
+        <a href="index.html" class="mode-tab active">Classic Mode</a>
+        <a href="quote.html" class="mode-tab">Quotes Mode</a>
+    </div>
+
+    <img src="../images/sakamoto_logo.png" alt="Sakamoto Days Logo" class="main-logo" style="transform: scale(0.75);">
+    <div class="subtitle">Guess characters from Sakamoto Days!</div>
+
+    <div class="controls">
+        <div class="autocomplete" style="position: relative; display: inline-block;">
+            <input type="text" id="guessInput" placeholder="Type a character name..." autocomplete="off">
+            <div id="autocompleteList" class="autocomplete-items"></div>
+        </div>
+        
+        <button id="guessBtn">Guess!</button>
+        <button id="answerBtn">Answer 🔍</button>
+        <button id="restartBtn">New Round 🔄</button>
+    </div>
+
+    <div id="answerBox" class="answer-box" style="display:none"></div>
+
+    <div class="stats">Guesses: <span id="guessCount">0</span></div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Hair</th>
+                    <th>Height</th>
+                    <th>Occupation</th>
+                    <th>Affiliation</th>
+                    <th>First Arc Appear</th>
+                </tr>
+            </thead>
+            <tbody id="resultBody"></tbody>
+        </table>
+    </div>
+
+    <script type="module" src="js/classic/main.js"></script>
+</body>
+</html>

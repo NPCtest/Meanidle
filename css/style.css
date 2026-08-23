@@ -1,0 +1,94 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ff6f00, #ff4081, #7c4dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.game-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.game-card .game-logo {
+    max-width: 100%;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.game-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.game-card .badge {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.badge-orange { background: rgba(255, 111, 0, 0.2); color: #ff6f00; border: 1px solid #ff6f00; }
+.badge-red { background: rgba(244, 67, 54, 0.2); color: #f44336; border: 1px solid #f44336; }
+.badge-blue { background: rgba(33, 150, 243, 0.2); color: #2196f3; border: 1px solid #2196f3; }
+
+footer {
+    margin-top: 60px;
+    color: #555;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haikyuudle - เกมทายตัวละคร</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav"><a href="../index.html">← Back to Meanidle</a></div>
+    <img src="../images/haikyuu_logo.png" alt="Haikyuu Logo" class="main-logo">
+    <div class="subtitle">Guess Haikyuu!! Characters!</div>
+
+    <div class="controls">
+        <div class="autocomplete" style="position: relative; display: inline-block;">
+            <input type="text" id="guessInput" placeholder="Type a character name..." autocomplete="off">
+            <div id="autocompleteList" class="autocomplete-items"></div>
+        </div>
+        
+        <button id="guessBtn">Guess!</button>
+        <button id="answerBtn">Answer 🔍</button>
+        <button id="restartBtn">New Round 🔄</button>
+    </div>
+
+    <div id="answerBox" class="answer-box" style="display:none"></div>
+
+    <div class="stats">Guesses: <span id="guessCount">0</span></div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Prefecture</th>
+                    <th>Position</th>
+                    <th>Year</th>
+                    <th>Number</th>
+                    <th>Height</th>
+                    <th>Hair</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="resultBody"></tbody>
+        </table>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
