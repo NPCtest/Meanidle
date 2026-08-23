@@ -39,7 +39,5 @@ Guess characters from the hit manga *Sakamoto Days*!
 1. Clone or download this repository to your computer.
 2. Double-click the `index.html` file to open it in your web browser.
 
-## 🛠️ Built With
-* HTML5
-* CSS3 (Custom styling, animations, flexbox layout)
-* Vanilla JavaScript (ES6 Modules, OOP Game Logic)
+## 💬 Support & Feedback
+If you want to support the project, leave a comment, or provide feedback, please send it to: **karmaez3388@gmail.com**
